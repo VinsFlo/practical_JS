@@ -20,12 +20,13 @@ const images = () => {
 		if (target && target.classList.contains('preview')) {
 			imgPopup.style.display = 'flex';
 			const path = target.parentNode.getAttribute('href');
-			bigImage.setAttribute('scr', path);
+			bigImage.setAttribute('src', path);
 		}
+
 		if (target && target.matches('div.popup')) {
 			imgPopup.style.display = 'none';
 		}
-	})
+	});
 };
 
 export default images;
